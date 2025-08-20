@@ -1,0 +1,15 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="40" rx="8" fill="#0B0F14"/>
+  <g filter="url(#f1)">
+    <path d="M20 10 L28 20 L20 30 L12 20 Z" stroke="#D4AF37" stroke-width="2" fill="none"/>
+    <circle cx="28" cy="20" r="3" fill="#D4AF37"/>
+  </g>
+  <text x="40" y="26" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#D4AF37" letter-spacing="0.5">
+    AI Oracle · iOT
+  </text>
+  <defs>
+    <filter id="f1" x="0" y="0" width="60" height="40" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#D4AF37" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+</svg>
