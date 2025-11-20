@@ -54,8 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <div className="font-semibold text-white">联系</div>
               <ul className="mt-3 space-y-2">
-                <li>邮箱：<a href="mailto:BWS.web3@gmail.com">BWS.web3@gmail.com</a></li>
-                <li>网址：<a href="https://www.bwd.hk">www.bwd.hk</a></li>
+                <li>邮箱：<a href="mailto:info@AIOracle.link">info@AIOracle.link</a></li>
+                <li>网址：<a href="https://www.AIOracle.link">www.AIOracle.link</a></li>
               </ul>
             </div>
           </div>
