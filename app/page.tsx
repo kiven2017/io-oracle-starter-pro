@@ -94,27 +94,33 @@ export default function Page() {
                 date: "2024-11",
                 title: "AI Oracle 完成 A 轮融资",
                 desc: "获得多家知名投资机构青睐，总融资额达 1000 万美元，将用于技术研发和市场拓展。",
-                tag: "融资"
+                tag: "融资",
+                icon: "🤝"
               },
               {
                 date: "2024-10",
                 title: "成功落地东南亚冷链项目",
                 desc: "为东南亚最大的冷链物流企业提供全程温控数据上链服务，覆盖 200+ 冷藏车辆。",
-                tag: "案例"
+                tag: "案例",
+                icon: "❄️"
               },
               {
                 date: "2024-09",
                 title: "获得工信部认证资质",
                 desc: "通过国家工信部数据安全与隐私保护认证，成为首批获得资质的 Web3 数据服务商。",
-                tag: "资质"
+                tag: "资质",
+                icon: "🏆"
               },
             ].map((news, idx) => (
-              <div key={idx} className="card hover:border-gold/50 transition-all">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
-                    {news.tag}
-                  </span>
-                  <span className="text-sm text-text-secondary">{news.date}</span>
+              <div key={idx} className="card hover:border-gold/50 transition-all group">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
+                      {news.tag}
+                    </span>
+                    <span className="text-sm text-text-secondary">{news.date}</span>
+                  </div>
+                  <span className="text-3xl group-hover:scale-110 transition-transform">{news.icon}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{news.title}</h3>
                 <p className="text-text-secondary text-sm leading-relaxed">{news.desc}</p>
