@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/developers">开发者</a>
               <a href="/docs">文档</a>
               <a href="/pricing">定价</a>
-              <a href="/about">关于我们</a>
+              <a href="/#about">关于我们</a>
             </div>
             <div className="flex items-center gap-4 text-sm mr-4">
               <a href="/" className="text-gold">ZH</a>
