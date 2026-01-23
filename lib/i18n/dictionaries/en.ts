@@ -36,6 +36,7 @@ export const en: Dictionary = {
   about: {
     title: "About AI Oracle",
     desc: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced IoT Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data. We combine hardware security modules and AI anomaly detection to ensure full-process trust from data collection to on-chain storage.",
+    subtitle: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced IoT Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data.",
     mission: {
       title: "Our Mission",
       desc: "Build a trusted bridge between the real world and blockchain, enabling physical world data to enter Web3 ecosystems in a verifiable and immutable manner. Drive large-scale implementation of RWA, supply chain finance, and compliance auditing scenarios, providing transparent and efficient data infrastructure globally."
@@ -43,7 +44,24 @@ export const en: Dictionary = {
     tech: {
       title: "Technical Advantages",
       desc: "Combining cutting-edge technologies including Hardware Security Modules (HSM), AI anomaly detection, Zero-Knowledge Proofs (ZKP), and Merkle anchoring, we ensure full-process trust from data collection, transmission to on-chain storage, providing financial-grade security for enterprise applications. Every data point is traceable and verifiable."
-    }
+    },
+    missionDesc: "Build a trusted bridge between the real world and blockchain, enabling physical world data to enter Web3 ecosystems in a verifiable and immutable manner. Drive large-scale implementation of RWA, supply chain finance, and compliance auditing scenarios.",
+    techDesc: "Combining cutting-edge technologies including Hardware Security Modules (HSM), AI anomaly detection, Zero-Knowledge Proofs (ZKP), we ensure full-process trust from data collection to on-chain storage, providing financial-grade security for enterprise applications.",
+    coreValuesTitle: "Core Values",
+    authenticity: "Data Authenticity",
+    authenticityDesc: "Hardware signing at device level + AI anomaly detection ensure data source credibility from the origin, preventing fake data injection.",
+    certainty: "On-Chain Certainty",
+    certaintyDesc: "Verifiable timestamps and Merkle anchoring technology ensure immutability of on-chain data process, facilitating audit replay.",
+    integration: "Easy Integration",
+    integrationDesc: "Standardized API/SDK, complete integration in 5 minutes, supporting multiple blockchain and IoT protocols.",
+    partnersTitle: "Partners",
+    partnersDesc: "Partnering with industry-leading enterprises to build trusted data ecosystem",
+    newsTitle: "Latest News",
+    newsDesc: "Stay updated with AI Oracle's latest developments",
+    contactTitle: "Contact Us",
+    contactDesc: "Want to learn more about AI Oracle? Feel free to contact us, our team is always ready to serve you.",
+    applyTrial: "Apply Trial",
+    sendEmail: "Send Email"
   },
   coreValues: {
     title: "Core Values",
@@ -138,5 +156,106 @@ export const en: Dictionary = {
     email: "Email",
     website: "Website",
     copyright: "© 2025 AI Oracle. All rights reserved."
+  },
+  pricing: {
+    title: "Pricing",
+    subtitle: "Flexible pricing from development to enterprise scale.",
+    free: {
+      name: "Free Developer",
+      price: "$0",
+      features: ["100K data points/month", "Basic anchoring & queries", "Community support"],
+      cta: "Start Trial"
+    },
+    pro: {
+      name: "Professional",
+      price: "$299/month",
+      features: ["Pay-as-you-go scaling", "Webhook/callback & retry", "99.9% SLA & email support"],
+      cta: "Contact Sales"
+    },
+    enterprise: {
+      name: "Enterprise",
+      price: "Custom",
+      features: ["Private deployment / dedicated instance", "Industry modules & compliance consulting", "Dedicated technical support & training"],
+      cta: "Get Quote"
+    },
+    billingTitle: "Billing Policy (Draft)",
+    billingItems: [
+      "Data points: Successfully written data records (including anchoring).",
+      "Queries: Billed for successfully returned anchoring/proof queries.",
+      "Overage: Excess usage billed monthly on a pay-as-you-go basis."
+    ]
+  },
+  docs: {
+    title: "Documentation",
+    welcome: "Welcome to the IoT Oracle documentation. This page is a starting guide; multi-level routing can be added later.",
+    quickStart: "Quick Start",
+    steps: [
+      "Apply for API key (console/email)",
+      "Register device (including public key fingerprint)",
+      "Upload first data point",
+      "Get anchoring hash and verify on-chain"
+    ],
+    apiExample: "API Example (cURL)",
+    sdk: "SDK",
+    changelog: "Changelog",
+    comingSoon: "Coming soon."
+  },
+  contact: {
+    title: "Apply for Trial",
+    subtitle: "Please fill out the following information, and we will contact you to provide POC guidelines and samples.",
+    companyName: "Company Name",
+    contactPerson: "Contact Person",
+    email: "Email",
+    phone: "Phone",
+    industry: "Industry",
+    useCase: "Use Case",
+    dataVolume: "Data Volume",
+    submit: "Submit Application"
+  },
+  blog: {
+    title: "Blog",
+    subtitle: "Technical articles and case studies coming soon."
+  },
+  solutions: {
+    title: "Solutions",
+    subtitle: "Providing templated integration and auditable on-chain evidence for different industries.",
+    manufacturing: {
+      title: "Manufacturing & Supply Chain",
+      desc: "Trusted on-chain device data, tamper-proof and traceable."
+    },
+    agriculture: {
+      title: "Agriculture & Origin Verification",
+      desc: "Sensor + DID for RWA and origin auditing."
+    },
+    coldChain: {
+      title: "Cold Chain Logistics & Risk Control",
+      desc: "Temperature/humidity and opening event anchoring reduces claims disputes."
+    },
+    energy: {
+      title: "Energy / Carbon Assets",
+      desc: "Automated metering and auditing to support carbon credit issuance."
+    },
+    viewDetails: "View Details"
+  },
+  cases: {
+    title: "Case Studies",
+    subtitle: "Stories + data screenshots, continuously updated.",
+    case1: {
+      name: "East China Manufacturing Group · Production Line Data Trust",
+      kpi: ["Anomaly detection +32%", "Audit time -45%"],
+      desc: "Integrating workstation data into IoT Oracle to form a traceable evidence chain."
+    },
+    case2: {
+      name: "Southeast Asia Fresh Cold Chain · Temperature Control Dispute Resolution",
+      kpi: ["Temperature deviation -28%", "Claims efficiency +37%"],
+      desc: "On-chain anchoring of temperature/humidity and opening events for quick evidence."
+    },
+    case3: {
+      name: "Green Energy Park · Carbon Asset Measurement",
+      kpi: ["Audit time -50%", "Issuance cycle -20%"],
+      desc: "Unified measurement standards, auto-generated audit materials and proofs."
+    },
+    viewDetails: "View Details",
+    contactUs: "Contact Us"
   }
 };
