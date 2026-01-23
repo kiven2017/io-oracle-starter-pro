@@ -1,144 +1,307 @@
+"use client";
+
 import Hero from "@/components/Hero";
+import DataChart from "@/components/DataChart";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 export default function Page() {
+  const { t } = useLanguage();
+
   return (
     <>
       <Hero />
       
-      {/* 核心优势 */}
-      <section className="section">
-        <div className="container grid md:grid-cols-3 gap-6">
-          {[
-            {title: "数据真实性", desc: "设备端硬件签名 + 异常检测，保障来源可信。"},
-            {title: "上链确定性", desc: "可验证时间戳与 Merkle 锚定，便于审计回放。"},
-            {title: "易集成", desc: "标准化 API/SDK，5 分钟完成接入与验证。"},
-          ].map((c) => (
-            <div className="card" key={c.title}>
-              <div className="text-xl font-semibold text-white">{c.title}</div>
-              <p className="mt-3 text-text-secondary">{c.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 关于我们 */}
+      {/* About AI Oracle */}
       <section id="about" className="section bg-black/30">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">关于 <span className="text-gold">AI Oracle</span></h2>
-            <p className="mt-4 text-text-secondary max-w-3xl mx-auto">
-              AI Oracle 致力于打造下一代可信数据基础设施，通过 AI 增强的 IoT 预言机技术，
-              为 Web3 生态提供真实世界数据的可信上链解决方案。
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.about.title}
+            </h2>
+            <p className="mt-4 text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              {t.about.desc}
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="card">
-              <div className="text-xl font-semibold text-gold mb-4">🎯 我们的使命</div>
+            <div className="card hover:border-gold/50 transition-all">
+              <div className="flex items-start gap-3 mb-4">
+                <span className="text-2xl">🎯</span>
+                <div className="text-xl font-semibold text-gold">{t.about.mission.title}</div>
+              </div>
               <p className="text-text-secondary leading-relaxed">
-                构建真实世界与区块链之间的可信桥梁，让物理世界的数据以可验证、
-                不可篡改的方式进入 Web3 生态，推动 RWA、供应链金融、合规审计等场景落地。
+                {t.about.mission.desc}
               </p>
             </div>
             
-            <div className="card">
-              <div className="text-xl font-semibold text-gold mb-4">💡 技术优势</div>
+            <div className="card hover:border-gold/50 transition-all">
+              <div className="flex items-start gap-3 mb-4">
+                <span className="text-2xl">💡</span>
+                <div className="text-xl font-semibold text-gold">{t.about.tech.title}</div>
+              </div>
               <p className="text-text-secondary leading-relaxed">
-                结合硬件安全模块（HSM）、AI 异常检测、零知识证明等前沿技术，
-                确保数据从采集、传输到上链的全流程可信，为企业级应用提供坚实保障。
+                {t.about.tech.desc}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 合作企业 */}
+      {/* Core Values */}
       <section className="section">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">合作伙伴</h2>
-            <p className="mt-4 text-text-secondary">与行业领先企业共同推动可信数据生态建设</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.coreValues.title}
+            </h2>
+            <p className="mt-4 text-text-secondary max-w-3xl mx-auto">
+              {t.coreValues.desc}
+            </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              {name: "华为云", category: "云服务"},
-              {name: "阿里云", category: "云服务"},
-              {name: "腾讯云", category: "云服务"},
-              {name: "AWS", category: "云服务"},
-              {name: "Chainlink", category: "区块链"},
-              {name: "Polygon", category: "区块链"},
-              {name: "物联网协会", category: "行业组织"},
-              {name: "工信部认证", category: "资质认证"},
-            ].map((partner, idx) => (
-              <div key={idx} className="card text-center hover:border-gold/50 transition-colors">
-                <div className="text-lg font-semibold text-white">{partner.name}</div>
-                <div className="mt-2 text-sm text-text-secondary">{partner.category}</div>
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="card hover:border-gold/50 transition-all group text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center border border-gold/30">
+                <svg className="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
-            ))}
+              <h3 className="text-xl font-semibold text-white mb-3">{t.coreValues.authenticity.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.coreValues.authenticity.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center border border-gold/30">
+                <svg className="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t.coreValues.certainty.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.coreValues.certainty.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center border border-gold/30">
+                <svg className="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-3">{t.coreValues.security.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.coreValues.security.desc}</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 公司动态 */}
+      {/* Industry Solutions */}
       <section className="section bg-black/30">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white">最新动态</h2>
-            <p className="mt-4 text-text-secondary">了解 AI Oracle 的最新进展</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.industries.title}
+            </h2>
+            <p className="mt-4 text-text-secondary">
+              {t.industries.desc}
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-agriculture.png" alt="Smart Agriculture" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.agriculture.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.agriculture.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-coldchain.png" alt="Cold Chain" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.coldChain.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.coldChain.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-manufacturing.png" alt="Manufacturing" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.manufacturing.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.manufacturing.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-energy.png" alt="Smart Energy" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.energy.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.energy.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-logistics.png" alt="Smart Logistics" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.logistics.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.logistics.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <img src="/images/industry-construction.png" alt="Construction" className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold text-gold text-center mb-3">{t.industries.construction.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed text-center">{t.industries.construction.desc}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.partners.title}
+            </h2>
+            <p className="mt-4 text-text-secondary">
+              {t.partners.desc}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
             {[
-              {
-                date: "2024-11",
-                title: "AI Oracle 完成 A 轮融资",
-                desc: "获得多家知名投资机构青睐，总融资额达 1000 万美元，将用于技术研发和市场拓展。",
-                tag: "融资",
-                icon: "🤝"
-              },
-              {
-                date: "2024-10",
-                title: "成功落地东南亚冷链项目",
-                desc: "为东南亚最大的冷链物流企业提供全程温控数据上链服务，覆盖 200+ 冷藏车辆。",
-                tag: "案例",
-                icon: "❄️"
-              },
-              {
-                date: "2024-09",
-                title: "获得工信部认证资质",
-                desc: "通过国家工信部数据安全与隐私保护认证，成为首批获得资质的 Web3 数据服务商。",
-                tag: "资质",
-                icon: "🏆"
-              },
-            ].map((news, idx) => (
-              <div key={idx} className="card hover:border-gold/50 transition-all group">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
-                      {news.tag}
-                    </span>
-                    <span className="text-sm text-text-secondary">{news.date}</span>
-                  </div>
-                  <span className="text-3xl group-hover:scale-110 transition-transform">{news.icon}</span>
+              { name: "partner-1.png", alt: "Chainlink" },
+              { name: "partner-2.png", alt: "Solana" },
+              { name: "partner-3.png", alt: "H3 Labs" },
+              { name: "partner-4.png", alt: "Dune" },
+              { name: "partner-5.png", alt: "AWS" },
+              { name: "partner-6.png", alt: "Chainbase" }
+            ].map((partner, idx) => (
+              <div key={idx} className="card text-center hover:border-gold/50 transition-all bg-white/5 backdrop-blur">
+                <div className="h-16 flex items-center justify-center">
+                  <img 
+                    src={`/images/${partner.name}`} 
+                    alt={partner.alt} 
+                    className="max-h-12 max-w-full object-contain"
+                  />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">{news.title}</h3>
-                <p className="text-text-secondary text-sm leading-relaxed">{news.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 实时 Demo */}
-      <section id="demo" className="section">
+      {/* Team */}
+      <section className="section bg-black/30">
         <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.team.title}
+            </h2>
+            <p className="mt-4 text-text-secondary">
+              {t.team.desc}
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              { name: "Alice Chen", role: "CEO", icon: "👩‍💼" },
+              { name: "Jack Xu", role: "CTO", icon: "👨‍💻" },
+              { name: "Carol Wang", role: "CPO", icon: "👩‍🎨" },
+              { name: "David Liu", role: "Head of BD", icon: "👨‍💼" },
+              { name: "Emma Li", role: "Lead Engineer", icon: "👩‍💻" },
+              { name: "Frank Wu", role: "Blockchain Architect", icon: "👨‍🔬" },
+              { name: "Grace Zhao", role: "Data Scientist", icon: "👩‍🔬" }
+            ].map((member, idx) => (
+              <div key={idx} className="card hover:border-gold/50 transition-all text-center">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center text-4xl border border-gold/30">
+                  {member.icon}
+                </div>
+                <div className="text-lg font-semibold text-white">{member.name}</div>
+                <div className="text-sm text-gold mt-1">{member.role}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest News */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.news.title}
+            </h2>
+            <p className="mt-4 text-text-secondary">
+              {t.news.desc}
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img src="/images/news-1.png" alt="News 1" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
+                  {t.news.news1.tag}
+                </span>
+                <span className="text-sm text-text-secondary">{t.news.news1.date}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">{t.news.news1.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.news.news1.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img src="/images/news-2.png" alt="News 2" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
+                  {t.news.news2.tag}
+                </span>
+                <span className="text-sm text-text-secondary">{t.news.news2.date}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">{t.news.news2.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.news.news2.desc}</p>
+            </div>
+
+            <div className="card hover:border-gold/50 transition-all group">
+              <div className="aspect-video rounded-lg mb-4 overflow-hidden">
+                <img src="/images/news-3.png" alt="News 3" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex items-center gap-3 mb-3">
+                <span className="px-3 py-1 text-xs font-semibold bg-gold/20 text-gold rounded-full">
+                  {t.news.news3.tag}
+                </span>
+                <span className="text-sm text-text-secondary">{t.news.news3.date}</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">{t.news.news3.title}</h3>
+              <p className="text-sm text-text-secondary leading-relaxed">{t.news.news3.desc}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Real-time Data Monitor */}
+      <section id="demo" className="section bg-black/30">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              {t.monitor.title}
+            </h2>
+            <p className="mt-4 text-text-secondary max-w-3xl mx-auto">
+              {t.monitor.desc}
+            </p>
+          </div>
+          
           <div className="card">
-            <div className="text-2xl font-semibold text-white">实时 Demo（占位）</div>
-            <p className="mt-3 text-text-secondary">将温度/湿度/振动数据以折线图展示，点击"查看交易"跳转区块链浏览器。</p>
-            <div className="mt-6 flex gap-3">
-              <a href="#" className="btn-primary">查看交易</a>
-              <a href="/docs" className="btn-ghost">查看文档</a>
+            <DataChart />
+            
+            <div className="mt-6 flex gap-3 justify-center">
+              <a href="#" className="btn-primary">{t.monitor.viewTx}</a>
+              <a href="/docs" className="btn-ghost">{t.monitor.viewDocs}</a>
             </div>
           </div>
         </div>
