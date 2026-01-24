@@ -47,7 +47,8 @@ export default function Footer() {
         <div>
           <div className="font-semibold text-white mb-3">{t.footer.contact}</div>
           <ul className="space-y-2">
-            <li>{t.footer.email}: <a href="mailto:info@AIOracle.link" className="hover:text-gold transition">info@AIOracle.link</a></li>
+            <li>{t.footer.email}: <a href="mailto:manager@AIOracle.link" className="hover:text-gold transition">manager@AIOracle.link</a></li>
+            <li>{t.footer.techSupport}: <a href="mailto:Support@AIOracle.link" className="hover:text-gold transition">Support@AIOracle.link</a></li>
             <li>{t.footer.website}: <a href="https://www.AIOracle.link" className="hover:text-gold transition">www.AIOracle.link</a></li>
           </ul>
         </div>

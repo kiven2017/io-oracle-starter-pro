@@ -176,7 +176,8 @@ export default function Page() {
               { name: "partner-3.png", alt: "H3 Labs" },
               { name: "partner-4.png", alt: "Dune" },
               { name: "partner-5.png", alt: "AWS" },
-              { name: "partner-6.png", alt: "Chainbase" }
+              { name: "partner-6.png", alt: "Chainbase" },
+              { name: "partner-7.png", alt: "Partner 7" }
             ].map((partner, idx) => (
               <div key={idx} className="card text-center hover:border-gold/50 transition-all bg-white/5 backdrop-blur">
                 <div className="h-16 flex items-center justify-center">

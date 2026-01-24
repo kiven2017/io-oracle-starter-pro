@@ -151,7 +151,8 @@ export const zhCN = {
     status: "状态",
     blog: "博客",
     contact: "联系",
-    email: "邮箱",
+    email: "商务合作",
+    techSupport: "技术支持",
     website: "网址",
     copyright: "© 2026 AI Oracle. All rights reserved."
   },

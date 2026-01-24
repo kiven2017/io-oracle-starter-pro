@@ -153,7 +153,8 @@ export const en: Dictionary = {
     status: "Status",
     blog: "Blog",
     contact: "Contact",
-    email: "Email",
+    email: "Business",
+    techSupport: "Tech Support",
     website: "Website",
     copyright: "© 2025 AI Oracle. All rights reserved."
   },
