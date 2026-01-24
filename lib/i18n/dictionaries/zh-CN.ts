@@ -256,6 +256,194 @@ export const zhCN = {
     },
     viewDetails: "查看详情",
     contactUs: "联系对接"
+  },
+  error: {
+    title: "出错了",
+    message: "很抱歉，页面渲染出现问题。",
+    retry: "重试",
+    digest: "错误摘要"
+  },
+  notFound: {
+    title: "404 - 页面未找到",
+    message: "抱歉，您访问的页面不存在或已被移动。",
+    backHome: "返回首页"
+  },
+  solutionDetail: {
+    challenge: "场景挑战",
+    solution: "我们的方案",
+    metrics: "关键指标（示例）",
+    integration: "集成方式",
+    integrationDesc: "网关脚本 + Webhook 回调 + 链上锚定。提供 Postman 集合与 SDK（Node / Python / Rust）。",
+    applyPoc: "申请 POC 指南",
+    viewDocs: "查看文档",
+    manufacturing: {
+      title: "制造业与供应链",
+      challenges: [
+        "生产设备与工位数据真实性难以保障",
+        "跨工厂/跨系统数据口径不一致",
+        "合规审计与责任追踪成本高"
+      ],
+      solutions: [
+        "设备侧硬件签名与时间戳",
+        "网关聚合与异常检测",
+        "链上锚定形成可回放证据链"
+      ],
+      metrics: [
+        "停线异常提前发现率 +30%",
+        "质量问题定位时长 -40%",
+        "合规审计时间 -50%"
+      ]
+    },
+    agriculture: {
+      title: "农业与产地确权",
+      challenges: [
+        "产地数据分散难核验",
+        "高价值农产品防伪溯源难",
+        "RWA 发行需要可信底层数据"
+      ],
+      solutions: [
+        "传感器+地块 DID 标识",
+        "收割/加工关键事件锚定",
+        "与链上凭证/NFT 绑定确权"
+      ],
+      metrics: [
+        "溯源查询转化率 +25%",
+        "伪劣投诉 -35%",
+        "RWA 抵押接受度提升"
+      ]
+    },
+    coldChain: {
+      title: "冷链物流与风控",
+      challenges: [
+        "温湿度波动与开箱事件易争议",
+        "运输多方协同难",
+        "索赔证据缺失/难取信"
+      ],
+      solutions: [
+        "实时监测 + 异常告警",
+        "开箱/撞击事件上链",
+        "一键导出取证报表"
+      ],
+      metrics: [
+        "温控偏差 -30%",
+        "争议工单 -40%",
+        "赔付效率 +35%"
+      ]
+    },
+    energy: {
+      title: "能源/碳资产",
+      challenges: [
+        "计量口径不统一",
+        "人工审计成本高",
+        "碳减排量难以被信任"
+      ],
+      solutions: [
+        "标准化计量接口",
+        "AI 异常识别 + 取证",
+        "生成碳信用支撑材料"
+      ],
+      metrics: [
+        "审计工时 -50%",
+        "异常漏检率 -40%",
+        "碳信用发行周期 -20%"
+      ]
+    }
+  },
+  caseDetail: {
+    backToCases: "← 返回案例",
+    industry: "行业",
+    region: "区域",
+    overview: "背景概览",
+    challenges: "挑战",
+    solution: "解决方案",
+    implementation: "实施与集成",
+    results: "结果与 KPI",
+    proof: "链上证明（示例）",
+    params: "项目参数",
+    deviceCount: "设备数量",
+    dataVolume: "数据量级",
+    blockchain: "链路选择",
+    duration: "周期",
+    applyButton: "申请同类方案",
+    manufacturingLine: {
+      title: "华东制造集团 · 产线数据可信化",
+      industry: "制造业",
+      region: "华东",
+      overview: "将关键工位的数据通过设备侧硬件签名上报，网关聚合后进行异常检测，并进行链上锚定以支持审计回放。",
+      challenges: [
+        "多工位多系统数据口径不一致",
+        "人为操作与日志后补风险",
+        "质量事故追责证据不足"
+      ],
+      solutions: [
+        "设备侧私钥签名与时间戳",
+        "网关进行 CBOR 归一化与队列缓冲",
+        "AI 异常检测并生成事件",
+        "Merkle 树批量锚定至链"
+      ],
+      implementation: "与现有 MES/SCADA 对接，新增网关组件与 API 回调，形成统一证据链。",
+      results: [
+        "异常提前发现率 +32%",
+        "审计时间 -45%",
+        "质检返工率 -18%"
+      ],
+      deviceCount: "1200+",
+      dataVolume: "5M 点/天",
+      blockchain: "Solana 主网 / BSN 联盟链（可切换）",
+      duration: "8 周（两期）"
+    },
+    coldChain: {
+      title: "东南亚生鲜冷链 · 温控争议解决",
+      industry: "冷链物流",
+      region: "东南亚",
+      overview: "对冷链运输过程中的温湿度与开箱/撞击事件进行实时上报与锚定，提升索赔处理效率。",
+      challenges: [
+        "多承运方协同难",
+        "温控数据争议频发",
+        "取证材料零散且不可被信任"
+      ],
+      solutions: [
+        "实时温湿度采集与告警",
+        "开箱/撞击事件上链",
+        "一键导出取证报表"
+      ],
+      implementation: "与 TMS/WMS 对接，通过 Webhook 回调和查询接口完成证据链检索。",
+      results: [
+        "温控偏差 -28%",
+        "索赔效率 +37%",
+        "争议工单 -40%"
+      ],
+      deviceCount: "3000+",
+      dataVolume: "2M 点/天",
+      blockchain: "Solana 主网",
+      duration: "6 周（一期）"
+    },
+    energy: {
+      title: "绿色能源园区 · 碳资产计量",
+      industry: "能源/碳资产",
+      region: "华南",
+      overview: "统一计量口径并将数据锚定上链，生成可审计材料以支撑碳信用发行。",
+      challenges: [
+        "多种能源的计量口径不统一",
+        "人工审计成本高",
+        "减排量可信度不足"
+      ],
+      solutions: [
+        "标准化计量接口",
+        "AI 异常识别与取证",
+        "自动生成审计材料"
+      ],
+      implementation: "对接能源计量表与数据中台，基于 SDK 与回调接口形成数据证据链。",
+      results: [
+        "审计工时 -50%",
+        "发行周期 -20%",
+        "异常漏检率 -40%"
+      ],
+      deviceCount: "800+",
+      dataVolume: "1.2M 点/天",
+      blockchain: "BSN 联盟链",
+      duration: "10 周（两期）"
+    }
   }
 };
 

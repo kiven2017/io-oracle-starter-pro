@@ -169,24 +169,22 @@ export default function Page() {
             </p>
           </div>
           
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
             {[
-              { name: "partner-1.png", alt: "Chainlink" },
+              { name: "partner-1.png", alt: "Ethereum" },
               { name: "partner-2.png", alt: "Solana" },
-              { name: "partner-3.png", alt: "H3 Labs" },
-              { name: "partner-4.png", alt: "Dune" },
-              { name: "partner-5.png", alt: "AWS" },
-              { name: "partner-6.png", alt: "Chainbase" },
-              { name: "partner-7.png", alt: "Partner 7" }
+              { name: "partner-3.png", alt: "Conflux" },
+              { name: "partner-4.png", alt: "AWS Amazon" },
+              { name: "partner-5.png", alt: "Chainlink" },
+              { name: "partner-6.png", alt: "Chainlink" },
+              { name: "partner-7.png", alt: "Humanity Protocol" }
             ].map((partner, idx) => (
-              <div key={idx} className="card text-center hover:border-gold/50 transition-all bg-white/5 backdrop-blur">
-                <div className="h-16 flex items-center justify-center">
-                  <img 
-                    src={`/images/${partner.name}`} 
-                    alt={partner.alt} 
-                    className="max-h-12 max-w-full object-contain"
-                  />
-                </div>
+              <div key={idx} className="flex items-center justify-center">
+                <img 
+                  src={`/images/${partner.name}`} 
+                  alt={partner.alt} 
+                  className="w-40 h-20 object-contain"
+                />
               </div>
             ))}
           </div>

@@ -156,7 +156,7 @@ export const en: Dictionary = {
     email: "Business",
     techSupport: "Tech Support",
     website: "Website",
-    copyright: "© 2025 AI Oracle. All rights reserved."
+    copyright: "© 2026 AI Oracle. All rights reserved."
   },
   pricing: {
     title: "Pricing",
@@ -258,5 +258,193 @@ export const en: Dictionary = {
     },
     viewDetails: "View Details",
     contactUs: "Contact Us"
+  },
+  error: {
+    title: "Error Occurred",
+    message: "Sorry, there was a problem rendering the page.",
+    retry: "Retry",
+    digest: "Error Digest"
+  },
+  notFound: {
+    title: "404 - Page Not Found",
+    message: "Sorry, the page you are looking for does not exist or has been moved.",
+    backHome: "Back to Home"
+  },
+  solutionDetail: {
+    challenge: "Challenges",
+    solution: "Our Solution",
+    metrics: "Key Metrics (Example)",
+    integration: "Integration",
+    integrationDesc: "Gateway scripts + Webhook callbacks + on-chain anchoring. Postman collection and SDK (Node / Python / Rust) provided.",
+    applyPoc: "Apply for POC Guide",
+    viewDocs: "View Documentation",
+    manufacturing: {
+      title: "Manufacturing & Supply Chain",
+      challenges: [
+        "Difficulty ensuring production equipment and workstation data authenticity",
+        "Inconsistent data standards across factories/systems",
+        "High cost of compliance auditing and accountability tracking"
+      ],
+      solutions: [
+        "Hardware signing and timestamps at device level",
+        "Gateway aggregation and anomaly detection",
+        "On-chain anchoring to form traceable evidence chain"
+      ],
+      metrics: [
+        "Production line anomaly early detection +30%",
+        "Quality issue localization time -40%",
+        "Compliance audit time -50%"
+      ]
+    },
+    agriculture: {
+      title: "Agriculture & Origin Verification",
+      challenges: [
+        "Scattered and hard-to-verify origin data",
+        "Difficulty in anti-counterfeiting and traceability for high-value agricultural products",
+        "RWA issuance requires trusted underlying data"
+      ],
+      solutions: [
+        "Sensor + land plot DID identification",
+        "Anchoring of key harvest/processing events",
+        "Binding with on-chain credentials/NFTs for rights confirmation"
+      ],
+      metrics: [
+        "Traceability query conversion rate +25%",
+        "Counterfeit complaints -35%",
+        "Increased RWA collateral acceptance"
+      ]
+    },
+    coldChain: {
+      title: "Cold Chain Logistics & Risk Control",
+      challenges: [
+        "Temperature/humidity fluctuations and opening events easily disputed",
+        "Difficult multi-party transportation coordination",
+        "Missing/untrusted claims evidence"
+      ],
+      solutions: [
+        "Real-time monitoring + anomaly alerts",
+        "Opening/impact events on-chain",
+        "One-click export of evidence reports"
+      ],
+      metrics: [
+        "Temperature control deviation -30%",
+        "Dispute tickets -40%",
+        "Claims efficiency +35%"
+      ]
+    },
+    energy: {
+      title: "Energy / Carbon Assets",
+      challenges: [
+        "Inconsistent metering standards",
+        "High manual audit costs",
+        "Difficulty trusting carbon reduction amounts"
+      ],
+      solutions: [
+        "Standardized metering interfaces",
+        "AI anomaly detection + evidence collection",
+        "Generate carbon credit supporting materials"
+      ],
+      metrics: [
+        "Audit time -50%",
+        "Anomaly detection miss rate -40%",
+        "Carbon credit issuance cycle -20%"
+      ]
+    }
+  },
+  caseDetail: {
+    backToCases: "← Back to Cases",
+    industry: "Industry",
+    region: "Region",
+    overview: "Overview",
+    challenges: "Challenges",
+    solution: "Solution",
+    implementation: "Implementation & Integration",
+    results: "Results & KPIs",
+    proof: "On-Chain Proof (Example)",
+    params: "Project Parameters",
+    deviceCount: "Device Count",
+    dataVolume: "Data Volume",
+    blockchain: "Blockchain",
+    duration: "Duration",
+    applyButton: "Apply for Similar Solution",
+    manufacturingLine: {
+      title: "East China Manufacturing Group · Production Line Data Trust",
+      industry: "Manufacturing",
+      region: "East China",
+      overview: "Report data from key workstations through hardware signing at device level, aggregate through gateway for anomaly detection, and anchor on-chain to support audit replay.",
+      challenges: [
+        "Inconsistent data standards across multiple workstations and systems",
+        "Risk of manual operations and log backfilling",
+        "Insufficient evidence for quality accident accountability"
+      ],
+      solutions: [
+        "Device-side private key signing and timestamps",
+        "Gateway CBOR normalization and queue buffering",
+        "AI anomaly detection and event generation",
+        "Merkle tree batch anchoring to chain"
+      ],
+      implementation: "Integrate with existing MES/SCADA, add gateway components and API callbacks to form unified evidence chain.",
+      results: [
+        "Anomaly early detection rate +32%",
+        "Audit time -45%",
+        "Quality inspection rework rate -18%"
+      ],
+      deviceCount: "1200+",
+      dataVolume: "5M points/day",
+      blockchain: "Solana Mainnet / BSN Consortium Chain (switchable)",
+      duration: "8 weeks (2 phases)"
+    },
+    coldChain: {
+      title: "Southeast Asia Fresh Cold Chain · Temperature Control Dispute Resolution",
+      industry: "Cold Chain Logistics",
+      region: "Southeast Asia",
+      overview: "Real-time reporting and anchoring of temperature/humidity and opening/impact events during cold chain transportation to improve claims processing efficiency.",
+      challenges: [
+        "Difficult multi-carrier coordination",
+        "Frequent temperature control data disputes",
+        "Scattered and untrusted evidence materials"
+      ],
+      solutions: [
+        "Real-time temperature/humidity collection and alerts",
+        "Opening/impact events on-chain",
+        "One-click export of evidence reports"
+      ],
+      implementation: "Interface with TMS/WMS, complete evidence chain retrieval through Webhook callbacks and query interfaces.",
+      results: [
+        "Temperature control deviation -28%",
+        "Claims efficiency +37%",
+        "Dispute tickets -40%"
+      ],
+      deviceCount: "3000+",
+      dataVolume: "2M points/day",
+      blockchain: "Solana Mainnet",
+      duration: "6 weeks (1 phase)"
+    },
+    energy: {
+      title: "Green Energy Park · Carbon Asset Measurement",
+      industry: "Energy/Carbon Assets",
+      region: "South China",
+      overview: "Unify metering standards and anchor data on-chain to generate auditable materials supporting carbon credit issuance.",
+      challenges: [
+        "Inconsistent metering standards for multiple energy types",
+        "High manual audit costs",
+        "Insufficient credibility of emission reduction amounts"
+      ],
+      solutions: [
+        "Standardized metering interfaces",
+        "AI anomaly detection and evidence collection",
+        "Automatically generate audit materials"
+      ],
+      implementation: "Interface with energy meters and data platforms, form data evidence chain based on SDK and callback interfaces.",
+      results: [
+        "Audit time -50%",
+        "Issuance cycle -20%",
+        "Anomaly detection miss rate -40%"
+      ],
+      deviceCount: "800+",
+      dataVolume: "1.2M points/day",
+      blockchain: "BSN Consortium Chain",
+      duration: "10 weeks (2 phases)"
+    }
   }
 };

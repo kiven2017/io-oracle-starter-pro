@@ -31,32 +31,32 @@ declare namespace __next_route_internal_types__ {
   type StaticRoutes = 
     | `/`
     | `/about`
-    | `/api/lead`
     | `/cases`
-    | `/cases/green-energy-park`
     | `/cases/manufacturing-line`
+    | `/cases/green-energy-park`
     | `/cases/seasia-cold-chain`
+    | `/blog`
+    | `/contact`
     | `/en`
     | `/en/cases`
+    | `/en/cases/green-energy-park`
     | `/en/cases/manufacturing-line`
     | `/en/cases/seasia-cold-chain`
-    | `/en/cases/green-energy-park`
     | `/en/docs`
     | `/en/pricing`
     | `/en/solutions`
-    | `/en/solutions/cold-chain`
     | `/en/solutions/agriculture`
+    | `/en/solutions/cold-chain`
     | `/en/solutions/energy`
     | `/en/solutions/manufacturing`
-    | `/contact`
-    | `/blog`
     | `/docs`
-    | `/pricing`
+    | `/api/lead`
     | `/solutions`
     | `/solutions/agriculture`
     | `/solutions/cold-chain`
     | `/solutions/energy`
     | `/solutions/manufacturing`
+    | `/pricing`
   type DynamicRoutes<T extends string = string> = 
     | `/cases/${SafeSlug<T>}`
 
