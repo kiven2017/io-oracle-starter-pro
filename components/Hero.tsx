@@ -61,7 +61,7 @@ export default function Hero() {
 
           <div className="card hover:border-gold/50 transition-all group">
             <div className="flex items-start gap-4">
-              <img src="/images/icon-stats-3.png" alt="" className="w-12 h-12" />
+              <img src="/images/plybox.png" alt="" className="w-12 h-12" />
               <div>
                 <div className="text-2xl font-bold text-gold">{t.hero.stats.easy.value}</div>
                 <div className="text-lg font-semibold text-white mt-1">{t.hero.stats.easy.title}</div>

@@ -35,20 +35,20 @@ declare namespace __next_route_internal_types__ {
     | `/cases/manufacturing-line`
     | `/cases/green-energy-park`
     | `/cases/seasia-cold-chain`
-    | `/blog`
     | `/contact`
+    | `/blog`
     | `/en`
     | `/en/cases`
     | `/en/cases/green-energy-park`
     | `/en/cases/manufacturing-line`
     | `/en/cases/seasia-cold-chain`
     | `/en/docs`
-    | `/en/pricing`
     | `/en/solutions`
-    | `/en/solutions/agriculture`
     | `/en/solutions/cold-chain`
+    | `/en/solutions/agriculture`
     | `/en/solutions/energy`
     | `/en/solutions/manufacturing`
+    | `/en/pricing`
     | `/docs`
     | `/api/lead`
     | `/solutions`
