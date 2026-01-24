@@ -4,7 +4,7 @@ export default function DocsEN() {
     <div className="section">
       <div className="container prose prose-invert max-w-none">
         <h1>Documentation</h1>
-        <p>Welcome to the iOT Oracle docs. This is a starter page you can split into deeper sections.</p>
+        <p>Welcome to the AI Oracle docs. This is a starter page you can split into deeper sections.</p>
         <h2>Quickstart</h2>
         <ol>
           <li>Request API key</li>

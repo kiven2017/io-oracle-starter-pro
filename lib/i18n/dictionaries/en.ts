@@ -12,7 +12,7 @@ export const en: Dictionary = {
   },
   hero: {
     title: "Bringing Real-World Data On-Chain with Trust",
-    subtitle: "AI-enhanced IoT Oracle providing end-to-end capabilities: data collection, trusted signing, on-chain anchoring, and audit traceability. Empowering RWA, supply chain finance, and compliance auditing.",
+    subtitle: "AI-enhanced AI Oracle providing end-to-end capabilities: data collection, trusted signing, on-chain anchoring, and audit traceability. Empowering RWA, supply chain finance, and compliance auditing.",
     applyTrial: "Apply for 14-Day Trial",
     watchDemo: "Watch 90s Demo",
     stats: {
@@ -35,8 +35,8 @@ export const en: Dictionary = {
   },
   about: {
     title: "About AI Oracle",
-    desc: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced IoT Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data. We combine hardware security modules and AI anomaly detection to ensure full-process trust from data collection to on-chain storage.",
-    subtitle: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced IoT Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data.",
+    desc: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced AI Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data. We combine hardware security modules and AI anomaly detection to ensure full-process trust from data collection to on-chain storage.",
+    subtitle: "AI Oracle is committed to building the next-generation trusted data infrastructure. Through AI-enhanced AI Oracle technology, we provide Web3 ecosystems with trusted on-chain solutions for real-world data.",
     mission: {
       title: "Our Mission",
       desc: "Build a trusted bridge between the real world and blockchain, enabling physical world data to enter Web3 ecosystems in a verifiable and immutable manner. Drive large-scale implementation of RWA, supply chain finance, and compliance auditing scenarios, providing transparent and efficient data infrastructure globally."
@@ -147,7 +147,7 @@ export const en: Dictionary = {
     light: "Light"
   },
   footer: {
-    desc: "AI-enhanced IoT Oracle, bringing real-world data securely on-chain.",
+    desc: "AI-enhanced AI Oracle, bringing real-world data securely on-chain.",
     links: "Links",
     docCenter: "Documentation",
     status: "Status",
@@ -188,7 +188,7 @@ export const en: Dictionary = {
   },
   docs: {
     title: "Documentation",
-    welcome: "Welcome to the IoT Oracle documentation. This page is a starting guide; multi-level routing can be added later.",
+    welcome: "Welcome to the AI Oracle documentation. This page is a starting guide; multi-level routing can be added later.",
     quickStart: "Quick Start",
     steps: [
       "Apply for API key (console/email)",
@@ -244,7 +244,7 @@ export const en: Dictionary = {
     case1: {
       name: "East China Manufacturing Group · Production Line Data Trust",
       kpi: ["Anomaly detection +32%", "Audit time -45%"],
-      desc: "Integrating workstation data into IoT Oracle to form a traceable evidence chain."
+      desc: "Integrating workstation data into AI Oracle to form a traceable evidence chain."
     },
     case2: {
       name: "Southeast Asia Fresh Cold Chain · Temperature Control Dispute Resolution",

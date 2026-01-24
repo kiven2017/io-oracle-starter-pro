@@ -5,7 +5,7 @@ export default function CaseDetail() {
     <div className="section">
       <div className="container prose prose-invert max-w-none">
         <h1>华东制造集团 · 产线数据可信化</h1>
-        <p className="text-text-secondary">本案例演示如何将工位/设备数据接入 iOT 预言机，形成可回放的链上证据链。</p>
+        <p className="text-text-secondary">本案例演示如何将工位/设备数据接入 AI Oracle，形成可回放的链上证据链。</p>
 
         <h2>挑战</h2>
         <ul>
