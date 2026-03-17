@@ -1,11 +1,28 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function DataChart() {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [lastUpdated, setLastUpdated] = useState("--:--:--");
+  const statusText = locale === "zh-CN" ? "实时更新中" : "Live updating";
+  const lastUpdatedLabel = locale === "zh-CN" ? "最后更新" : "Last updated";
+
+  useEffect(() => {
+    const formatTime = () =>
+      new Date().toLocaleTimeString(locale === "zh-CN" ? "zh-CN" : "en-US", {
+        hour12: false,
+      });
+
+    setLastUpdated(formatTime());
+    const timer = window.setInterval(() => {
+      setLastUpdated(formatTime());
+    }, 1000);
+
+    return () => window.clearInterval(timer);
+  }, [locale]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -175,10 +192,10 @@ export default function DataChart() {
       <div className="absolute top-12 right-4 bg-black/70 p-4 rounded-lg backdrop-blur border border-white/10">
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-          <span className="text-sm text-white">实时更新中</span>
+          <span className="text-sm text-white">{statusText}</span>
         </div>
         <div className="text-xs text-text-secondary mt-2">
-          最后更新: {new Date().toLocaleTimeString('zh-CN')}
+          {lastUpdatedLabel}: {lastUpdated}
         </div>
       </div>
     </div>
