@@ -29,34 +29,34 @@ declare namespace __next_route_internal_types__ {
     S extends `${string}${SearchOrHash}` ? never : S
 
   type StaticRoutes = 
-    | `/`
     | `/about`
-    | `/cases`
-    | `/cases/manufacturing-line`
-    | `/cases/green-energy-park`
-    | `/cases/seasia-cold-chain`
-    | `/contact`
     | `/blog`
-    | `/en`
-    | `/en/cases`
-    | `/en/cases/green-energy-park`
-    | `/en/cases/manufacturing-line`
-    | `/en/cases/seasia-cold-chain`
-    | `/en/docs`
-    | `/en/solutions`
-    | `/en/solutions/cold-chain`
-    | `/en/solutions/agriculture`
-    | `/en/solutions/energy`
-    | `/en/solutions/manufacturing`
-    | `/en/pricing`
-    | `/docs`
+    | `/cases/green-energy-park`
+    | `/cases`
     | `/api/lead`
-    | `/solutions`
+    | `/contact`
+    | `/cases/manufacturing-line`
+    | `/docs`
+    | `/cases/seasia-cold-chain`
     | `/solutions/agriculture`
-    | `/solutions/cold-chain`
+    | `/`
+    | `/pricing`
     | `/solutions/energy`
     | `/solutions/manufacturing`
-    | `/pricing`
+    | `/solutions/cold-chain`
+    | `/solutions`
+    | `/en`
+    | `/en/cases/manufacturing-line`
+    | `/en/cases/green-energy-park`
+    | `/en/cases/seasia-cold-chain`
+    | `/en/solutions/agriculture`
+    | `/en/docs`
+    | `/en/cases`
+    | `/en/solutions/cold-chain`
+    | `/en/pricing`
+    | `/en/solutions`
+    | `/en/solutions/manufacturing`
+    | `/en/solutions/energy`
   type DynamicRoutes<T extends string = string> = 
     | `/cases/${SafeSlug<T>}`
 

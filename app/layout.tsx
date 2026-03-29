@@ -7,7 +7,10 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "AI Oracle Labs · Trusted IoT Data On-Chain",
   description: "把真实世界的数据，可信上链",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+  },
   openGraph: {
     title: "AI Oracle Labs",
     description: "AI 增强的 IoT 预言机，一站式解决方案",

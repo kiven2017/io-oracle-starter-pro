@@ -1,0 +1,18 @@
+
+> io-oracle-starter@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Experiments (use with caution):
+    · typedRoutes
+
+ ✓ Starting...
+ ✓ Ready in 3.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 629ms (470 modules)
+ GET / 200 in 777ms
+ GET / 200 in 62ms
+ GET / 200 in 80ms
+ ✓ Compiled in 1566ms (484 modules)
+ GET / 200 in 142ms
