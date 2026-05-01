@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aioracle.link"
+        }
+      ],
+      "destination": "https://rwa-door.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
