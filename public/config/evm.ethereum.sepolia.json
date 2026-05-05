@@ -1,0 +1,20 @@
+{
+  "environment": "sepolia",
+  "warning": "TESTNET ONLY. Never publish these addresses as official treasury routes.",
+  "chain_id": 11155111,
+  "rpc_url": "https://ethereum-sepolia-rpc.publicnode.com",
+  "chain_name": "Ethereum Sepolia",
+  "native_currency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "presale": "0xE8D4D3CE1Cbbc049b9C6F163ed6D53B275F15873",
+  "payment_token": "0x2D38F5507bAb700B07d90e7D68182EF2A9F36210",
+  "payment_token_symbol": "USDC",
+  "sale_token": "0xE11F18Eb0815e5Fd63f56F9acdCa0c7951e79375",
+  "treasury": "0x04683B35Ec581E863C1282Fe2f20fe0F42088809",
+  "admin": "0x977d3575422c2820531039f94b63f35D6Da7D3F3",
+  "buyer": "0x977d3575422c2820531039f94b63f35D6Da7D3F3",
+  "buyer_payment_balance": "50000000000"
+}

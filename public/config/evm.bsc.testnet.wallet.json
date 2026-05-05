@@ -1,0 +1,19 @@
+{
+  "environment": "bsc-testnet-wallet",
+  "warning": "TESTNET ONLY. Wallet network metadata for BSC Testnet prompts.",
+  "chain_id": 97,
+  "rpc_url": "https://bsc-testnet-rpc.publicnode.com",
+  "chain_name": "BNB Smart Chain Testnet",
+  "native_currency": {
+    "name": "BNB",
+    "symbol": "tBNB",
+    "decimals": 18
+  },
+  "presale": "",
+  "payment_token": "",
+  "sale_token": "",
+  "treasury": "",
+  "admin": "",
+  "buyer": "",
+  "buyer_payment_balance": "0"
+}

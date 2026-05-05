@@ -1,0 +1,20 @@
+{
+  "environment": "bsc-testnet",
+  "warning": "TESTNET ONLY. Never publish these addresses as official treasury routes.",
+  "chain_id": 97,
+  "rpc_url": "https://bsc-testnet-rpc.publicnode.com",
+  "chain_name": "BNB Smart Chain Testnet",
+  "native_currency": {
+    "name": "BNB",
+    "symbol": "BNB",
+    "decimals": 18
+  },
+  "presale": "0xYourPresaleAddress",
+  "payment_token": "0xYourPaymentTokenAddress",
+  "payment_token_symbol": "USDC",
+  "sale_token": "0xYourSaleTokenAddress",
+  "treasury": "0xYourTreasuryAddress",
+  "admin": "0xYourAdminAddress",
+  "buyer": "0xOptionalTestBuyerAddress",
+  "buyer_payment_balance": "50000000000"
+}

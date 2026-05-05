@@ -1,0 +1,248 @@
+// 这个文件用于测试 WalletConnect Project ID 是否有效
+// 使用方法: 在浏览器中打开此文件,点击按钮进行测试
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WalletConnect Project ID Tester</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      border: 1px solid #334155;
+    }
+    h1 {
+      color: #22d3ee;
+      margin-bottom: 8px;
+    }
+    .status {
+      padding: 12px;
+      border-radius: 8px;
+      margin: 12px 0;
+      font-weight: 600;
+    }
+    .status.success {
+      background: #065f46;
+      color: #6ee7b7;
+      border: 1px solid #10b981;
+    }
+    .status.error {
+      background: #7f1d1d;
+      color: #fca5a5;
+      border: 1px solid #ef4444;
+    }
+    .status.info {
+      background: #1e3a8a;
+      color: #93c5fd;
+      border: 1px solid #3b82f6;
+    }
+    button {
+      background: linear-gradient(135deg, #22d3ee, #06b6d4);
+      color: #0f172a;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 8px 4px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: #e2e8f0;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    pre {
+      background: #0f172a;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+      border: 1px solid #334155;
+    }
+    .log-entry {
+      margin: 8px 0;
+      padding: 8px;
+      border-left: 3px solid #22d3ee;
+      padding-left: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🔍 WalletConnect Project ID Tester</h1>
+    <p>测试当前的 WalletConnect Project ID 是否有效</p>
+  </div>
+
+  <div class="card">
+    <h2>当前配置</h2>
+    <div id="currentConfig"></div>
+  </div>
+
+  <div class="card">
+    <h2>测试默认 Project ID</h2>
+    <button id="testDefaultBtn" onclick="testDefaultProjectId()">测试默认 ID</button>
+    <div id="defaultResult"></div>
+  </div>
+
+  <div class="card">
+    <h2>测试自定义 Project ID</h2>
+    <input type="text" id="customProjectId" placeholder="输入你的 WalletConnect Project ID">
+    <button id="testCustomBtn" onclick="testCustomProjectId()">测试自定义 ID</button>
+    <div id="customResult"></div>
+  </div>
+
+  <div class="card">
+    <h2>测试日志</h2>
+    <div id="logs"></div>
+  </div>
+
+  <script type="module">
+    const DEFAULT_PROJECT_ID = 'fd67bb14968102f0fe95dd954f984454';
+    
+    function addLog(message, type = 'info') {
+      const logsDiv = document.getElementById('logs');
+      const entry = document.createElement('div');
+      entry.className = `log-entry`;
+      entry.style.borderLeftColor = type === 'error' ? '#ef4444' : type === 'success' ? '#10b981' : '#22d3ee';
+      entry.innerHTML = `<strong>[${new Date().toLocaleTimeString()}]</strong> ${message}`;
+      logsDiv.insertBefore(entry, logsDiv.firstChild);
+    }
+
+    function showStatus(elementId, message, type) {
+      const div = document.getElementById(elementId);
+      div.innerHTML = `<div class="status ${type}">${message}</div>`;
+    }
+
+    async function testProjectId(projectId, resultElementId) {
+      try {
+        addLog(`开始测试 Project ID: ${projectId.substring(0, 8)}...`);
+        
+        // 动态导入 WalletConnect
+        const { EthereumProvider } = await import('https://esm.sh/@walletconnect/ethereum-provider@2.23.8');
+        
+        addLog('初始化 WalletConnect Provider...');
+        const provider = await EthereumProvider.init({
+          projectId,
+          optionalChains: [1, 56, 97, 11155111],
+          showQrModal: false,
+          metadata: {
+            name: 'Test App',
+            description: 'WalletConnect Test',
+            url: window.location.origin,
+            icons: [],
+          },
+        });
+
+        addLog('Provider 初始化成功,尝试创建会话...');
+        
+        // 尝试创建 URI (这会验证 Project ID 是否有效)
+        const uriPromise = new Promise((resolve, reject) => {
+          const timeout = setTimeout(() => {
+            reject(new Error('创建 URI 超时 (10秒)'));
+          }, 10000);
+
+          provider.once('display_uri', (uri) => {
+            clearTimeout(timeout);
+            resolve(uri);
+          });
+
+          provider.connect({
+            optionalChains: [1],
+          }).catch((error) => {
+            clearTimeout(timeout);
+            reject(error);
+          });
+        });
+
+        const uri = await uriPromise;
+        
+        if (uri) {
+          addLog('✅ URI 生成成功!', 'success');
+          showStatus(resultElementId, `✅ Project ID 有效! URI 已成功生成`, 'success');
+          
+          // 断开连接
+          await provider.disconnect().catch(() => {});
+          
+          return true;
+        } else {
+          throw new Error('URI 为空');
+        }
+      } catch (error) {
+        addLog(`❌ 测试失败: ${error.message}`, 'error');
+        showStatus(resultElementId, `❌ 测试失败: ${error.message}`, 'error');
+        return false;
+      }
+    }
+
+    window.testDefaultProjectId = async function() {
+      const btn = document.getElementById('testDefaultBtn');
+      btn.disabled = true;
+      btn.textContent = '测试中...';
+      
+      const result = await testProjectId(DEFAULT_PROJECT_ID, 'defaultResult');
+      
+      btn.disabled = false;
+      btn.textContent = '测试默认 ID';
+      
+      if (!result) {
+        addLog('⚠️ 默认 Project ID 无效,需要更换', 'error');
+      }
+    };
+
+    window.testCustomProjectId = async function() {
+      const customId = document.getElementById('customProjectId').value.trim();
+      
+      if (!customId) {
+        showStatus('customResult', '请输入 Project ID', 'error');
+        return;
+      }
+      
+      const btn = document.getElementById('testCustomBtn');
+      btn.disabled = true;
+      btn.textContent = '测试中...';
+      
+      const result = await testProjectId(customId, 'customResult');
+      
+      btn.disabled = false;
+      btn.textContent = '测试自定义 ID';
+      
+      if (result) {
+        addLog('✅ 找到有效的 Project ID! 请在项目根目录创建 .env 文件并设置 VITE_WALLETCONNECT_PROJECT_ID', 'success');
+      }
+    };
+
+    // 显示当前配置
+    document.getElementById('currentConfig').innerHTML = `
+      <p><strong>默认 Project ID:</strong> <code>${DEFAULT_PROJECT_ID}</code></p>
+      <p><strong>环境变量 VITE_WALLETCONNECT_PROJECT_ID:</strong> <code>未设置 (需要在 .env 文件中配置)</code></p>
+    `;
+    
+    addLog('页面加载完成,点击按钮开始测试');
+  </script>
+</body>
+</html>

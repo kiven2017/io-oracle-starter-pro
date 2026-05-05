@@ -1,40 +1,54 @@
-# iOT 预言机 · Black & Gold Starter
+# AIOracle Thailand Frontend
 
-黑金主题的 Next.js (App Router) + Tailwind 起步项目，内置首页与 `/docs` 文档页。
+## 文档入口
 
-## 快速开始
+建议按这个顺序阅读：
 
-```bash
-# 使用 npm
-npm i
-npm run dev
+1. [READ.md](./READ.md)
+   当前项目最完整的总览文档，包含 GitBook 理解、页面逻辑、官方钱包地址、Wert 卡支付链路
+2. [master_project/python/README.md](./master_project/python/README.md)
+   Wert Flask 后端接入、`.env` 配置、Sandbox/Production 映射、API 示例
+3. [master_project/solana/TESTING.md](./master_project/solana/TESTING.md)
+   Solana 测试环境、devnet 程序地址、本地测试钱包地址，以及正式地址和测试地址的区分说明
+4. [master_project/evm/README.md](./master_project/evm/README.md)
+   EVM presale 合约骨架、Hardhat 工程、buy/claim 口径说明
+5. [master_project/evm/DEPLOYMENT.md](./master_project/evm/DEPLOYMENT.md)
+   EVM 本地部署状态、当前本地地址，以及公开测试网尚缺的配置项
+6. `read_file/aioracle_gitbook_final/zh-TW`
+   AIOracle 中文 GitBook / 白皮书参考资料
+7. `read_file/aioracle-presale-dapp`
+   早期预售 DApp 参考结构
 
-# 或使用 pnpm / yarn
-pnpm i && pnpm dev
-# yarn && yarn dev
-```
+## 当前仓库定位
 
-访问：<http://localhost:3000>
+这是一个基于 `React + Vite + TailwindCSS` 的 AIOracle 官网与预售前端项目，当前已经包含：
 
-## 主要特性
-- 黑金主题（Tailwind 自定义色）
-- 首页 Hero、要点卡片、Demo 占位
-- 文档中心 `/docs`（可扩展为多级）
-- 申请试点表单 `/contact` + `/api/lead`
+- 官网首页和品牌内容区块
+- Hero 预售卡片
+- 钱包连接、二维码、确认购买、价格表、Exit Intent 弹窗
+- 官方钱包地址展示
+- Wert 卡支付前端交互
+- Solana `Production / Devnet Test` 环境切换
+- Solana devnet 真实钱包购买与 claim 测试链路
+- EVM WalletConnect 真实二维码会话接入骨架
 
-## 待接入（建议）
-- 表单入库与邮件发送（Supabase / Resend / SendGrid）
-- 状态页与分析埋点（Better Uptime / Vercel Analytics）
-- i18n、多语言内容（next-intl）
-- 真实 Demo 图表与链上浏览器链接
+其中卡支付已经不是静态跳转，而是：
 
-## 新增页面（本次增量）
-- `/solutions` 以及行业子页：`/solutions/manufacturing`, `/solutions/agriculture`, `/solutions/cold-chain`, `/solutions/energy`
-- `/pricing` 定价页（含三个套餐示例与计费口径）
-- `/cases` 客户案例页（3 个模板卡片）
-- 导航已切换为使用黑金 LOGO（`/public/logo.svg`）
+1. 前端弹窗调用 Flask 后端创建 Wert Session
+2. 后端用你的 Wert 账号信息请求官方接口
+3. 前端再打开 Wert 官方 Widget
 
-## 新增（本次增量）
-- 案例详情页（中文）：`/cases/manufacturing-line`, `/cases/seasia-cold-chain`, `/cases/green-energy-park`
-- 英文版本（/en）：`/en`, `/en/docs`, `/en/solutions/*`, `/en/cases/*` 等
-- 导航增加语言快捷链接（ZH / EN）
+## 目录说明
+
+- `src/`
+  当前前端页面、组件、数据配置与 hooks
+- `master_project/python/`
+  Wert 卡支付 Flask 后端示例
+- `master_project/solana/`
+  Solana Presale 合约工程与测试环境说明
+- `master_project/evm/`
+  EVM Presale 合约工程
+- `public/`
+  静态资源
+- `read_file/`
+  参考资料目录，不建议直接删除

@@ -1,0 +1,20 @@
+{
+  "environment": "devnet",
+  "warning": "LOCAL TEST ONLY. Do not use these addresses as official production wallets.",
+  "rpc_url": "https://api.devnet.solana.com",
+  "program_id": "2bFdEAeUTwavEKDD8ZN8jeqQE1jzN4cVCZ6GEMj14JSN",
+  "presale_config_pda": "HLNBwUdHBAZT4QocLgMWK1W49xNo2pcTWYMAtMTUGy32",
+  "presale_token_vault": "31B2ocv1cuWbHdDkeEUUVyRW1Dwud7MMLN3NRj9PKAuA",
+  "payment_mint": "AZKvuGpNziXj4SvqdnmVU8qxhejERRtoLyDfhewYbWYe",
+  "aio_mint": "F7hoxQ5xLZVofhniijJoWUEnsKfqJKDsS8trxVWTwrGQ",
+  "admin": "HWfAfqSffPtT7yMNVvNjAvPhxYpP87W5m98HB2KZd93Z",
+  "treasury": "54FmBeXamvtiN7KH42rVBrahu7jrNdS1qG5kW3b6BEpu",
+  "buyer": "4woAswxKQLiFgp6o68qZERG1fX1HMa9BfHkYpKerkJMb",
+  "treasury_payment_account": "qDi7pT8tyjBJ2DogGfR8mVpGhkqJcg9na1Znf4Zmgye",
+  "buyer_payment_account": "537HANMK3oMgxmMG5Qwyhqud43waeH7vkDkZZDUDrtvT",
+  "buyer_aio_account": "H2KBLAwa8xVMrMqnhWDUJfVEnefCAo5HHYtpvP3i4QZ4",
+  "initialize_signature": "2cmtDZhszHEAxY541fp1zfzkMG4UTXp7Qy21CU3ANmPn6R5ZsmnSMhfpV4uojv6Uhv8mLN27tbgJTSHZqSFb5kZ4",
+  "buyer_mint_signature": "KLSda5yo72ViJMqrd9wbzSnDs4RD69MdaTSmEEEFbWWjcx2z6Q3eTpYsdsQETPanbjVgyfw5xYY8vehS9idt69e",
+  "aio_mint_signature": "5CjbEqNFWgdGQ1QCC1JfYwSCcTRHgUddL49Z6tJxEwhV5QDh4mjwhztVB5jZbuQfmUzx3NgqK8RWypCsfF1RDPTq",
+  "deposit_signature": "5tDkmrP6Bsojk5APLST7kVAstaJSwi7RKLm4XVD8bQnC8PZbvyFpYSroSBmD6EJUDC5hDxiwUzj3bFsBbdMnXW5J"
+}
