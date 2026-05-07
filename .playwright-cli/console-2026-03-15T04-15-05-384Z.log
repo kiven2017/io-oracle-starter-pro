@@ -1,0 +1,71 @@
+[ 6190833ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:4173/src/lib/wertCheckout.js:0
+[ 6190835ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[ 6190835ms] [ERROR] [vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[ 6190835ms] [ERROR] [vite] Failed to reload /src/components/CardCheckoutModal.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[ 6190838ms] [ERROR] [vite] Failed to reload /src/components/CardCheckoutModal.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[ 6190847ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[ 6190893ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:4173/src/lib/wertCheckout.js?t=1773554296246:0
+[ 6190894ms] [ERROR] [vite] Failed to reload /src/components/CardCheckoutModal.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[15658267ms] [WARNING] Module "buffer" has been externalized for browser compatibility. Cannot access "buffer.Buffer" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/index.browser.esm-BMTidQtM.js?v=b8430c79:2685
+[15658289ms] ReferenceError: Buffer is not defined
+    at http://127.0.0.1:4173/node_modules/.vite/deps/@solana_spl-token.js?v=b8430c79:7296:1
+[16630544ms] [WARNING] Module "buffer" has been externalized for browser compatibility. Cannot access "buffer.Buffer" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/index.browser.esm-BMTidQtM.js?v=b8430c79:2685
+[16630547ms] ReferenceError: Buffer is not defined
+    at http://127.0.0.1:4173/node_modules/.vite/deps/@solana_spl-token.js?v=b8430c79:7296:1
+[16762851ms] ReferenceError: Buffer is not defined
+    at http://127.0.0.1:4173/node_modules/.vite/deps/@solana_spl-token.js?v=1b8933f9:7296:1
+[21459180ms] [ERROR] React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ WalletProviderQrModal 1. useState                   useState
+2. useState                   useState
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. undefined                  useEffect
+ @ http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:4179
+[21459195ms] Error: Rendered more hooks than during the previous render.
+    at updateWorkInProgressHook (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:4327:12)
+    at updateEffectImpl (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:4851:15)
+    at Object.useEffect (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:13253:5)
+    at exports.useEffect (http://127.0.0.1:4173/node_modules/.vite/deps/react.js?v=ae767f18:716:31)
+    at WalletProviderQrModal (http://127.0.0.1:4173/src/components/WalletProviderQrModal.jsx?t=1773569564494:28:2)
+    at Object.react_stack_bottom_frame (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:12868:12)
+    at renderWithHooks (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:4213:19)
+    at updateFunctionComponent (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:5569:16)
+    at beginWork (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:6140:20)
+    at runWithFiberInDEV (http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:851:66)
+[21459192ms] [WARNING] %s
+
+%s
+ An error occurred in the <WalletProviderQrModal> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:5257
+[21486698ms] [ERROR] The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [mobile, [object Object], devnet] [mobile, devnet, walletconnect, , , , ] @ http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=ae767f18:4196
+[23563399ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:4173/src/main.jsx:0
+[23611946ms] [WARNING] Module "util" has been externalized for browser compatibility. Cannot access "util.debuglog" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/stream-browserify.js?v=c6263eda:35
+[23611947ms] [WARNING] Module "util" has been externalized for browser compatibility. Cannot access "util.inspect" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/stream-browserify.js?v=c6263eda:35
+[24485584ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:4173/src/lib/evmPresale.js:0
+[24485584ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24503039ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24528722ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24541454ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24556801ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24574716ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24620979ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24635324ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24669464ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:4173/src/lib/evmPresale.js?t=1773572774747:0
+[24669465ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24743982ms] [ERROR] [vite] Failed to reload /src/components/PresaleConsole.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:4173/@vite/client:904
+[24745354ms] [WARNING] Module "util" has been externalized for browser compatibility. Cannot access "util.debuglog" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/stream-browserify.js?v=c2146eea:35
+[24745355ms] [WARNING] Module "util" has been externalized for browser compatibility. Cannot access "util.inspect" in client code. See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. @ http://127.0.0.1:4173/node_modules/.vite/deps/stream-browserify.js?v=c2146eea:35
+[28449636ms] [ERROR] The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [[object Object], devnet] [] @ http://127.0.0.1:4173/node_modules/.vite/deps/react-dom_client.js?v=c2146eea:4196

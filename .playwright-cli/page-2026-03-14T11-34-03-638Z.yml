@@ -1,0 +1,375 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - button "A AIOracle Physical Truth" [ref=e6] [cursor=pointer]:
+        - generic [ref=e8]: A
+        - generic [ref=e9]:
+          - generic [ref=e10]: AIOracle
+          - generic [ref=e11]: Physical Truth
+      - generic [ref=e12]:
+        - button "Core Team" [ref=e13] [cursor=pointer]
+        - button "Use Case" [ref=e14] [cursor=pointer]
+        - button "Abstract" [ref=e15] [cursor=pointer]
+        - button "Technology" [ref=e16] [cursor=pointer]
+        - button "Advisory" [ref=e17] [cursor=pointer]
+        - button "CONNECT WALLET" [ref=e19] [cursor=pointer]
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: The Oracle Infrastructure for Real World Assets
+        - generic [ref=e26]:
+          - heading "Defining Physical Truth" [level=1] [ref=e27]:
+            - text: Defining
+            - generic [ref=e28]: Physical Truth
+          - paragraph [ref=e29]: Securing trillion-dollar RWA value by bridging real-world sensors with blockchain code. Indisputable integrity for any physical asset.
+        - generic [ref=e30]:
+          - button "JOIN PRESALE" [ref=e31] [cursor=pointer]:
+            - text: JOIN PRESALE
+            - img [ref=e32]
+          - button "WHITEPAPER" [ref=e34] [cursor=pointer]:
+            - text: WHITEPAPER
+            - img [ref=e35]
+        - generic [ref=e38]:
+          - paragraph [ref=e40]: Industry Solutions
+          - paragraph [ref=e41]: Smart Agriculture | Smart Logistics | Green Energy
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - paragraph [ref=e44]: Minimum Entry
+            - paragraph [ref=e45]: 100 USDT
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: Oracle Scope
+            - paragraph [ref=e48]: BSC / ETH / Solana
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: RWA Focus
+            - paragraph [ref=e51]: Durian / Solar / Logistics
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: Stage
+            - paragraph [ref=e57]: 1 / 15
+          - generic [ref=e58]:
+            - paragraph [ref=e59]: Price
+            - paragraph [ref=e60]: $0.001
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Next
+            - paragraph [ref=e63]: $0.0011
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: Network
+            - paragraph [ref=e66]: BSC/ETH
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - heading "Presale Active" [level=3] [ref=e69]
+            - generic [ref=e70]: 01:23:45
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: Stage 1 Allocation
+              - generic [ref=e74]: 45.2% SOLD
+            - generic [ref=e77]:
+              - generic [ref=e78]: 54,800,000 AIO REMAINING
+              - button "View Schedule" [ref=e79] [cursor=pointer]
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - spinbutton [ref=e83]
+              - button "MAX" [ref=e85] [cursor=pointer]
+            - generic [ref=e87]: "Minimum: 100 USDT"
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - paragraph [ref=e90]: You Pay
+              - paragraph [ref=e91]: 0 USDT
+            - generic [ref=e92]:
+              - paragraph [ref=e93]: You Receive
+              - paragraph [ref=e94]: 0 AIO
+          - button "CONNECT WALLET" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]
+            - text: CONNECT WALLET
+          - generic [ref=e99]:
+            - button "Have a Promo Code?" [ref=e100] [cursor=pointer]
+            - paragraph [ref=e102]:
+              - img [ref=e103]
+              - text: "Safety: Official X: @AIOracle_link. Admins never DM first."
+              - link "Risk Disclosure" [ref=e105] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - paragraph [ref=e108]: Unlock (Plan B)
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: 15% at TGE
+              - paragraph [ref=e111]: 12-Month Linear
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Global Status
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: Audit
+                - generic [ref=e117]: Running
+              - generic [ref=e118]:
+                - generic [ref=e119]: Multisig
+                - generic [ref=e120]: Enabled
+              - generic [ref=e121]:
+                - generic [ref=e122]: MVP Demo
+                - generic [ref=e123]: Pending
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - img [ref=e128]
+          - text: Core Infrastructure Team
+        - heading "Trust Stack" [level=2] [ref=e131]
+        - paragraph [ref=e132]: The Architects of Physical Truth
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - img "Vincent Lee" [ref=e137]
+          - heading "Vincent Lee" [level=4] [ref=e138]
+          - paragraph [ref=e139]: RWA Founder / CEO
+        - generic [ref=e141]:
+          - img "Kevin" [ref=e143]
+          - heading "Kevin" [level=4] [ref=e144]
+          - paragraph [ref=e145]: Strategy Planning
+        - generic [ref=e147]:
+          - img "Aliks Dou" [ref=e149]
+          - heading "Aliks Dou" [level=4] [ref=e150]
+          - paragraph [ref=e151]: HK RWA Secretary
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - 'heading "Durian Cold Chain: Truth Proof" [level=2] [ref=e155]'
+        - paragraph [ref=e156]: Converting Physical Trade into Immutable Assets
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - heading "1) Source Batch Creation" [level=4] [ref=e160]
+            - paragraph [ref=e161]: Assigning unique Device DID to shipment lots, establishing data sovereignty at origin.
+          - generic [ref=e162]:
+            - heading "2) Hardware Integrity Signature" [level=4] [ref=e163]
+            - paragraph [ref=e164]: Sensor logs signed inside NXP SE050 chip. Hardware-level immutability for the global supply chain.
+          - generic [ref=e165]:
+            - heading "3) Verifiable Truth Proof" [level=4] [ref=e166]
+            - paragraph [ref=e167]: On-chain hashes serve as audit-ready evidence for trade insurance, settlement, and compliance.
+        - generic [ref=e168]:
+          - img [ref=e170]
+          - generic [ref=e174]:
+            - heading "AIOracle Proof Card" [level=4] [ref=e175]
+            - generic [ref=e176]: "REF: DUR-AIO-2026"
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: "Device DID:"
+              - generic [ref=e180]: did:aio:tha_dur_881
+            - generic [ref=e181]:
+              - generic [ref=e182]: "Verified Range:"
+              - generic [ref=e183]: 2.8°C - 5.1°C [PASS]
+            - generic [ref=e184]:
+              - generic [ref=e185]: "Hash Proof:"
+              - generic [ref=e186]: 0x4c2f88...912fbb
+          - button "VERIFY LIVE DEMO" [ref=e187] [cursor=pointer]
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - img [ref=e192]
+          - text: Deep Dive
+        - heading "Whitepaper Abstract V2.0" [level=2] [ref=e195]
+        - paragraph [ref=e196]: "\"Physical truth is the missing layer required for the RWA explosion.\""
+        - button "Download Full PDF" [ref=e198] [cursor=pointer]:
+          - text: Download Full PDF
+          - img [ref=e199]
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - img [ref=e205]
+          - heading "Physical Trust Stack" [level=4] [ref=e207]
+          - paragraph [ref=e208]: Hardware RoT + Device DID + Real Verification.
+        - generic [ref=e209]:
+          - img [ref=e211]
+          - heading "RoT Hardware Root" [level=4] [ref=e214]
+          - paragraph [ref=e215]: Tamper-proof key storage inside NXP SE050.
+        - generic [ref=e216]:
+          - img [ref=e218]
+          - heading "Data Oil Model" [level=4] [ref=e220]
+          - paragraph [ref=e221]: Scarcity powered by real-world physical signature.
+        - generic [ref=e222]:
+          - img [ref=e224]
+          - heading "PaaS Ecosystem" [level=4] [ref=e230]
+          - paragraph [ref=e231]: Unified multi-chain feeds for RWA settlement.
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - heading "Financial-Grade Physical Oracle System" [level=2] [ref=e235]
+        - paragraph [ref=e236]: Engineered for Industrial Trust
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - img [ref=e239]
+          - heading "Hardware RoT" [level=3] [ref=e241]
+          - paragraph [ref=e242]: Source-level signing ensures data integrity for institutional RWA across Thai agriculture and Global energy sectors.
+        - generic [ref=e243]:
+          - img [ref=e244]
+          - heading "Modular PaaS" [level=3] [ref=e246]
+          - paragraph [ref=e247]: From solar farms to logistics, AIOracle standardizes physical metrics for seamless multi-chain Web3 integration.
+        - generic [ref=e248]:
+          - img [ref=e249]
+          - heading "Oracle Network" [level=3] [ref=e255]
+          - paragraph [ref=e256]: Real-world data feeds compatible with Solana and ETH, powering the next-gen DeFi liquidity bridges.
+    - generic [ref=e258]:
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - img [ref=e261]
+          - text: Scarcity Flywheel
+        - heading "Economic Stability Logic" [level=2] [ref=e263]:
+          - text: Economic
+          - text: Stability Logic
+        - generic [ref=e264]:
+          - paragraph [ref=e265]: A portion of ecosystem revenue may be used for treasury operations and buyback/burn.
+          - paragraph [ref=e266]: Income from physical asset signatures will be utilized for protocol liquidity management and deflationary suggests based on governance.
+        - list [ref=e267]:
+          - listitem [ref=e268]:
+            - img [ref=e269]
+            - text: IDC signature-driven burning logic
+          - listitem [ref=e272]:
+            - img [ref=e273]
+            - text: Scarcity anchored to real-world asset volume
+      - generic [ref=e276]:
+        - paragraph [ref=e277]: "REAL-TIME SIMULATION: 15MW SOLAR FARM"
+        - generic [ref=e278]: $12,000
+        - paragraph [ref=e279]: Daily Buyback Expectation
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - paragraph [ref=e282]: Node Growth
+            - paragraph [ref=e283]: 50,000+
+          - generic [ref=e284]:
+            - paragraph [ref=e285]: Burn Rate p.a.
+            - paragraph [ref=e286]: 8.5%
+    - generic [ref=e288]:
+      - generic [ref=e289]:
+        - generic [ref=e290]:
+          - img [ref=e291]
+          - text: Global Advisory Council
+        - heading "Advisory Council" [level=2] [ref=e296]
+        - paragraph [ref=e297]: Bridging Web3 Capital and Global AI Strategy
+      - generic [ref=e298]:
+        - generic [ref=e299]:
+          - img "Mr. Dachao Tian" [ref=e301]
+          - heading "Mr. Dachao Tian" [level=4] [ref=e302]
+          - paragraph [ref=e303]: "@ChainfirCapital"
+          - generic [ref=e304]:
+            - paragraph [ref=e305]: Founder of Chainfir Capital
+            - paragraph [ref=e306]: Global Blockchain Fund Alliance
+        - generic [ref=e307]:
+          - img "Aditya Kumar" [ref=e309]
+          - heading "Aditya Kumar" [level=4] [ref=e310]
+          - paragraph [ref=e311]: DevRel Lead / GTM
+          - generic [ref=e312]:
+            - paragraph [ref=e313]: Web3 x AI Ecosystem Strategy
+            - paragraph [ref=e314]: Product Marketing Specialist
+        - generic [ref=e315]:
+          - img "Ishant Singh" [ref=e317]
+          - heading "Ishant Singh" [level=4] [ref=e318]
+          - paragraph [ref=e319]: AI Product Leader
+          - generic [ref=e320]:
+            - paragraph [ref=e321]: Ex OpenAI, Amazon Architect
+            - paragraph [ref=e322]: Startup Advisor & Founder
+    - generic [ref=e324]:
+      - generic [ref=e325]:
+        - generic [ref=e326]:
+          - img [ref=e327]
+          - text: Network Expansion
+        - heading "Affiliate Program" [level=2] [ref=e329]
+        - paragraph [ref=e330]: Oracle Node Expansion & Growth Incentives
+      - generic [ref=e331]:
+        - generic [ref=e332]:
+          - heading "Core Partner" [level=3] [ref=e333]
+          - paragraph [ref=e334]: 10,000 USDT SLOT
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - generic [ref=e337]: Direct Reward (L1)
+              - generic [ref=e338]: 12%
+            - generic [ref=e339]:
+              - generic [ref=e340]: Indirect Reward (L2)
+              - generic [ref=e341]: 5%
+          - button "Apply for Core Slot" [ref=e342] [cursor=pointer]
+        - generic [ref=e343]:
+          - heading "Standard Node" [level=3] [ref=e344]
+          - paragraph [ref=e345]: 1,000 USDT SLOT
+          - generic [ref=e346]:
+            - generic [ref=e347]:
+              - generic [ref=e348]: Direct Reward (L1)
+              - generic [ref=e349]: 8%
+            - generic [ref=e350]:
+              - generic [ref=e351]: Indirect Reward (L2)
+              - generic [ref=e352]: 3%
+          - button "Become Affiliate" [ref=e353] [cursor=pointer]
+    - generic [ref=e356]:
+      - paragraph [ref=e357]: Global Authority & Awards
+      - generic [ref=e358]:
+        - generic [ref=e359]:
+          - paragraph [ref=e360]: PUBLISHED BY
+          - generic [ref=e361]: CITIC PRESS
+        - generic [ref=e362]:
+          - paragraph [ref=e363]: PUBLISHED BY
+          - generic [ref=e364]: POSTS & TELECOM PRESS
+      - generic [ref=e365]:
+        - paragraph [ref=e366]: MAJOR AWARDS
+        - generic [ref=e367]:
+          - generic [ref=e368]: China International General Aviation Competition
+          - generic [ref=e369]: Shenzhen Innovation Competition Winner
+    - generic [ref=e372]:
+      - generic [ref=e373]:
+        - generic [ref=e374]:
+          - img [ref=e375]
+          - heading "Partner Alliance" [level=3] [ref=e379]
+          - paragraph [ref=e380]: Asset holders and government bodies. Secure your RWA infrastructure with our trusted Oracle node network.
+        - button "ALLIANCE ONBOARDING" [ref=e381] [cursor=pointer]
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - img [ref=e384]
+          - heading "Hardware Sandbox" [level=3] [ref=e387]
+          - paragraph [ref=e388]: Early access to Financial-Grade (SE050) Oracles is now open for private trial. Secure your supply source.
+        - button "REQUEST DEVICE TRIAL" [ref=e389] [cursor=pointer]
+    - generic [ref=e392]:
+      - generic [ref=e393]:
+        - generic [ref=e394]:
+          - generic [ref=e395]: A
+          - generic [ref=e396]: AIOracle.link
+        - paragraph [ref=e397]:
+          - text: Copyright 2026 AIOracle Labs. Defining the entry point for Real-World Assets.
+          - text: "OFFICIAL: AIOracle.link | X: @AIOracle_link"
+      - generic [ref=e398]:
+        - generic [ref=e399]:
+          - paragraph [ref=e400]: Resources
+          - link "GitBook" [ref=e401] [cursor=pointer]:
+            - /url: https://docs.aioracle.link
+          - link "Whitepaper V2.0" [ref=e402] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e403]:
+          - paragraph [ref=e404]: Safety
+          - link "Risk Disclosure" [ref=e405] [cursor=pointer]:
+            - /url: "#"
+          - link "Anti-Scam Guide" [ref=e406] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e407]:
+          - paragraph [ref=e408]: Official
+          - link "Telegram Official" [ref=e409] [cursor=pointer]:
+            - /url: https://t.me/AIOracle_Official
+          - link "AIOracle.link" [ref=e410] [cursor=pointer]:
+            - /url: https://aioracle.link
+          - link "X @AIOracle_link" [ref=e411] [cursor=pointer]:
+            - /url: https://x.com/AIOracle_link
+    - generic [ref=e413]:
+      - generic [ref=e414]:
+        - paragraph [ref=e415]: Presale Questions
+        - heading "FAQ" [level=2] [ref=e416]
+        - paragraph [ref=e417]: A more credible sale page should answer the questions buyers actually ask before they connect a wallet. This section now focuses on common presale concerns such as wallet support, pricing, vesting, safety checks, and purchase finality.
+      - generic [ref=e418]:
+        - generic [ref=e420]:
+          - button "Which wallets and networks are expected to work?" [ref=e421] [cursor=pointer]:
+            - generic [ref=e422]: Which wallets and networks are expected to work?
+            - img [ref=e423]
+          - generic [ref=e425]: The current sale experience is centered on BSC and Ethereum-style wallet flows, with MetaMask or other compatible wallets being the most typical option. If Solana support is introduced in the live checkout, users should confirm the enabled wallet list and network label directly in the official purchase flow before sending funds.
+        - button "What is the minimum participation amount?" [ref=e428] [cursor=pointer]:
+          - generic [ref=e429]: What is the minimum participation amount?
+          - img [ref=e430]
+        - button "How is token allocation calculated during the presale?" [ref=e434] [cursor=pointer]:
+          - generic [ref=e435]: How is token allocation calculated during the presale?
+          - img [ref=e436]
+        - button "When do purchased tokens become claimable?" [ref=e440] [cursor=pointer]:
+          - generic [ref=e441]: When do purchased tokens become claimable?
+          - img [ref=e442]
+        - button "How can I verify that I am using the official sale page?" [ref=e446] [cursor=pointer]:
+          - generic [ref=e447]: How can I verify that I am using the official sale page?
+          - img [ref=e448]
+        - button "Are presale purchases usually refundable?" [ref=e452] [cursor=pointer]:
+          - generic [ref=e453]: Are presale purchases usually refundable?
+          - img [ref=e454]
