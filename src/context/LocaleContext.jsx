@@ -393,7 +393,7 @@ const LOCALE_COPY = {
       sold: '{value}% Sold',
       remaining: '{value} AIO Remaining',
       viewSchedule: 'View Schedule',
-      placeholder: 'Enter {token} Amount',
+      placeholder: 'Presale is about to start',
       max: 'Max',
       minimum: 'Minimum: {value} USDT',
       youPay: 'You Pay',

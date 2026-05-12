@@ -3831,7 +3831,7 @@ export default function PresaleConsole({
               value={amount}
               onChange={(event) => setAmount(event.target.value)}
               placeholder={translatePresale('placeholder', { token: selectedToken?.symbol ?? tokenSymbol })}
-              className="w-full rounded-[1.25rem] border border-white/10 bg-black/30 px-4 py-3.5 pr-20 text-[1rem] font-bold text-white outline-none transition-colors placeholder:text-slate-500 focus:border-cyan-400/40 sm:rounded-[1.9rem] sm:px-6 sm:py-4 sm:pr-28 sm:text-[1.36rem]"
+              className="w-full rounded-[1.25rem] border border-white/10 bg-black/30 px-4 py-3.5 pr-24 text-[0.92rem] font-bold text-white outline-none transition-colors placeholder:text-slate-500 focus:border-cyan-400/40 sm:rounded-[1.9rem] sm:px-6 sm:py-4 sm:pr-28 sm:text-[1.36rem]"
             />
             <button
               type="button"
@@ -3892,8 +3892,8 @@ export default function PresaleConsole({
               }
               className="flex min-h-[3.15rem] w-full items-center justify-center gap-1.5 rounded-[1.15rem] border border-cyan-400/20 bg-cyan-400/10 px-2.5 py-3 text-[0.6rem] font-black uppercase tracking-[0.02em] text-cyan-300 transition-colors hover:border-cyan-400/40 hover:bg-cyan-400/20 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 sm:min-h-0 sm:rounded-[2rem] sm:gap-3 sm:px-5 sm:py-4 sm:text-base sm:tracking-[0.18em]"
             >
-              {isBusy ? <LoaderCircle className="h-3.5 w-3.5 animate-spin sm:h-5 sm:w-5" /> : <RefreshCw className="h-3.5 w-3.5 sm:h-5 sm:w-5" />}
-              <span className="whitespace-nowrap">
+              {isBusy ? <LoaderCircle className="h-3.5 w-3.5 shrink-0 animate-spin sm:h-5 sm:w-5" /> : <RefreshCw className="h-3.5 w-3.5 shrink-0 sm:h-5 sm:w-5" />}
+              <span className="min-w-0 truncate">
                 {isSolanaDevnetLive
                   ? translatePresale('claimDevnet')
                   : translatePresale('claimEvm', { network: evmClaimNetworkLabel })}
